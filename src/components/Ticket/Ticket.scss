@@ -1,0 +1,31 @@
+@import "../../styles/variables"; 
+
+.ticket {
+  height: 184px;
+  width: 502px;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: $primary-color;
+  box-shadow: $box-shadow;
+
+  &:hover{
+    background-color: $hover-color;
+  }
+}
+
+.ticket-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.ticket-header-price {
+  color: $secondary-color;
+  font: 600 24px/24px 'Open Sans';
+}
+

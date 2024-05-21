@@ -1,0 +1,40 @@
+@import "../../styles/variables"; 
+
+.Tabs {
+  width: 502px;
+  height: 50px;
+  display: flex;
+}
+
+.Tabs__nav-button {
+  width: 168px;  
+  cursor: pointer;
+  border-collapse: collapse;
+  color: $text-primary-color;
+  background-color: $primary-color;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: $border-style;
+
+  &:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  
+  &:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &.Tabs__nav-button--active {
+    color: $primary-color;
+    background-color: $secondary-color;
+    border: none;
+  }
+}

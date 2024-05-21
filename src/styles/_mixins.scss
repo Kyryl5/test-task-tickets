@@ -1,0 +1,13 @@
+@import './variables';
+
+@mixin button-transition($duration: 0.3s, $easing: ease) {
+  transition: box-shadow $duration $easing, opacity $duration $easing;
+}
+
+@mixin button-hover-style {
+  box-shadow: $hover-shadow;
+}
+
+@mixin button-active-style {
+  opacity: $button-active-opacity; 
+}
